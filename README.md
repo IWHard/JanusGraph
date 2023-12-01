@@ -11,7 +11,7 @@ Integrantes:
 - Montserrat del Carmen Uribe Chavez
 
 ### Contenido
-1. Archivo del dataset. [wiki-Vote](https://pages.github.com/)
+1. Archivo del dataset. [wiki-Vote](https://github.com/IWHard/JanusGraph/blob/main/wiki-Vote.txt.gz)
 2. Descripción	del	dataset. [Dataset_Desc](https://github.com/IWHard/JanusGraph/blob/main/Dataset_Desc)
 3. Descripción	del	diccionario	de datos del dataset. [Dataset_Dicc](https://github.com/IWHard/JanusGraph/blob/main/Dataset_Dicc)
 4. Descripción del modelado del dataset. [Dataset_Desc_Janus](https://github.com/IWHard/JanusGraph/blob/main/Dataset_Desc_Janus)
