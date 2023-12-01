@@ -1,8 +1,9 @@
 # JanusGraph PD03
 Universidad Autónoma de Yucatán
-Proyecto Final 
-Base de Datos 
-LCC
+
+Proyecto Final
+
+Base de Datos LCC
 
 Integrantes:
 - Alec Manuel Montes de Oca
