@@ -1,18 +1,18 @@
-Sentencias CRUD de ejemplo aplicadas en la dataset
+// Sentencias CRUD de ejemplo aplicadas en la dataset
 
-Create:
+// Create:
 
 // Crea un nuevo vertice con la etiqueta 'user' y la propiedad 'userId'
 g.addV('user').property('userId', 'newUser').iterate()
 graph.tx().commit()
 
-Read:
+// Read:
 
 // Encuentra un vertice con la etiqueta 'user' y la propiedad 'userId' sea igual a 'newUser'
 vertex = g.V().has('user', 'userId', 'newUser').next()
 println(vertex)
 
-Update:
+// Update:
 
 // Actualizar la propiedad 'userId' del vertice
 g.V(vertex).property('userId', 'updatedUser').iterate()
@@ -23,7 +23,7 @@ edge = g.V().hasLabel('user').outE('knows').has('since', '2023-01-01').next()
 g.E(edge).property('since', '2022-01-01').iterate()
 graph.tx().commit()
 
-Delete:
+// Delete:
 
 // Eliminar el vertice
 g.V(vertex).drop().iterate()
