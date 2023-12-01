@@ -46,4 +46,7 @@ JanusGraph tomara todos los valores ingresados del archivo wiki-Vote.txt.gz y po
 
 #### Archivo (No poner) 1.
 
-
+Colaboradores
+- Alec Manuel Montes de Oca
+- Jimena Nohemi Cruz Arreola
+- Montserrat del Carmen Uribe Chavez
