@@ -3,19 +3,17 @@ Desde 2008 se han realizado 2794 elecciones con un total de 103663 votos, donde 
 Hubo un resultado de 1235 elecciones con promoción de administrador mientras que en otras 1559 elecciones no tuvieron aquella promocion
 
 Estadísticas del dataset
-Nodos 7115
-Aristas 103689
+Nodos | 7115
+Aristas | 103689
+Nodos en el mayor WCC	| 7066 (0.993)
+Aristas en el mayor WCC	| 103663 (1.000)
+Nodos en el mayor SCC |	1300 (0.183)
+Aristas en el mayor SCC	| 39456 (0.381)
+Coeficiente de agrupamiento promedio | 0.1409
+Numero de triangulos | 608389
+Fracción de triángulos cerrados | 0.04564
+Diametro (El camino mas corto) | 7
+Diámetro efectivo del percentil 90 | 3.8
 
-
-Nodos en el mayor WCC	7066 (0.993)
-Aristas en el mayor WCC	103663 (1.000)
-Nodos en el mayor SCC	1300 (0.183)
-Aristas en el mayor SCC	39456 (0.381)
-Coeficiente de agrupamiento promedio	0.1409
-Numero de triangulos	608389
-Fracción de triángulos cerrados	0.04564
-Diametro (El camino mas corto)	7
-Diámetro efectivo del percentil 90	3.8
-
-WCC significa Weakly Connected Component
-SCC signfica Strongly	Connected	Component
+WCC -> Weakly Connected Component
+SCC -> Strongly Connected Component
