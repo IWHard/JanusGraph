@@ -13,16 +13,16 @@ Wikipedia es una enciclopedia libre escrita en colaboración por voluntarios de 
 | **Nombre del atributo**  | **Contenido** |
 | ------------- | ------------- |
 | Nodos | 7115 |
-| Aristas | 103689 |
+| Vértices | 103689 |
 | Nodos en el mayor WCC	| 7066 (0.993) |
-| Aristas en el mayor WCC	| 103663 (1.000) |
+| Vértices en el mayor WCC	| 103663 (1.000) |
 | Nodos en el mayor SCC |	1300 (0.183) |
-| Aristas en el mayor SCC	| 39456 (0.381) |
+| Vértices en el mayor SCC	| 39456 (0.381) |
 | Coeficiente de agrupamiento promedio | 0.1409 |
 | Número de triángulos | 608389 |
 | Fracción de triángulos cerrados | 0.04564 |
 | Diametro (El camino más corto) | 7 |
-|Diámetro efectivo del percentil 90 | 3.8 |
+| Diámetro efectivo del percentil 90 | 3.8 |
 
 WCC -> Weakly Connected Component
 SCC -> Strongly Connected Component
@@ -35,7 +35,7 @@ Podemos encontrar la dataset en este repositorio, el archivo llamado [wiki-Vote.
 | FromNodeID  | ID del votador  | Integer  | Si  | Encontraras el número del id del usuario quien ha votado hacia otro usuario para ser administrador  |
 | ToNodeID  | ID del votado  | Integer  | Si  | Encontraras el número del id del usuario quien ha recibido una votación para ser administrador |
 
-El dataset es un grafo dirigido con arista A -> B en donde el usuario A ha realizado una votación hacia el usuario B en convertirse un administrador de Wikipedia
+El dataset es un grafo dirigido con vértices A -> B en donde el usuario A ha realizado una votación hacia el usuario B en convertirse un administrador de Wikipedia
 JanusGraph tomara todos los valores ingresados del archivo wiki-Vote.txt.gz y posteriormente con el código encontrado en _ le cobrara sentido, vinculando los datos.
 
 ## Importación del dataset
@@ -44,7 +44,7 @@ podemos escribir un script de Groovy el cual puede ser ejecutado en la consola d
 
 Una vez realizado la ejecución del script, usando un segundo script para JanusGraph podemos generar el grado de la dataset de wiki-Vote, el script se llama _.
 
-Nota: JanusGraph requiere explícitamente la definición del schema antes que añadas aristas, nodos o propiedades.
+Nota: JanusGraph requiere explícitamente la definición del schema antes que añadas vértices, nodos o propiedades.
 
 Ya importado el dataset, podemos realizar algunas sentencias CRUD, podemos ver la documentación de las sentencias para nuestro dataset en [Sentencias_CRUD](https://github.com/IWHard/JanusGraph/blob/main/Sentencias_CRUD)
 
