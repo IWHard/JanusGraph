@@ -1,1 +1,46 @@
+# Para importar el dataset “Wikipedia Vote Network” encontrado en _, sin tener que descargar el dataset en este Github 
+# podemos escribir un script de Groovy el cual puede ser ejecutado en la consola de Gremlin, el script será el siguiente:
 
+$ curl -L -O http://snap.stanford.edu/data/wiki-Vote.txt.gz
+$ gunzip wiki-Vote.txt.gz
+
+# Una vez realizado la ejecución del script, usando el siguiente script para JanusGraph podemos generar el grafo de la dataset de wiki-Vote.
+
+// Inicializar JanusGraph
+graph = JanusGraphFactory.open('direccion/a/tu/configuracion.propiedades')
+g = graph.traversal()
+
+// Definir schema
+mgmt = graph.openManagement()
+if (!mgmt.containsVertexLabel('user')) {
+    mgmt.makeVertexLabel('user').make()
+}
+if (!mgmt.containsPropertyKey('userId')) {
+    mgmt.makePropertyKey('userId').dataType(String.class).make()
+}
+if (!mgmt.containsEdgeLabel('votesFor')) {
+    mgmt.makeEdgeLabel('votesFor').make()
+}
+mgmt.commit()
+
+// Definir getOrCreate function
+getOrCreate = { id ->
+  g.V().has('user','userId', id).
+    fold().
+    coalesce(unfold(),
+             addV('user').property('userId', id)).next()
+}
+
+// Cargar datos
+new File('wiki-Vote.txt').eachLine {
+  if (!it.startsWith("#")){
+    (fromVertex, toVertex) = it.split('\t').collect(getOrCreate)
+    g.addE('votesFor').from(fromVertex).to(toVertex).iterate()
+  }
+}
+
+// Confirmar la transacción para conservar todos los cambios en el disco.
+graph.tx().commit()
+
+# En donde se deberá reemplazar 'direccion/a/tu/configuracion.propiedades' con la dirección de archivo a tu archivo de configuración de JanusGraph.
+# Nota: JanusGraph require explicitamente la definición del schema antes que añadas vértices, nodos o propiedades.
