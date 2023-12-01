@@ -1,4 +1,4 @@
-# JanusGraph
+# JanusGraph PD03
 Proyecto Final Base de Datos LCC
 
 Integrantes:
@@ -6,7 +6,7 @@ Integrantes:
 - Jimena Nohemi Cruz Arreola
 - Montserrat del Carmen Uribe Chavez
 
-# Contenido
+## Contenido
 - Archivo del dataset.
 - Descripción	del	dataset.
 - Descripción	del	diccionario	de datos del dataset.
