@@ -6,6 +6,7 @@ Para el uso de JanusGraph se usó:
 - Gremlin: Como para crear el servidor en donde estará ubicado JanusGraph.
 - GremlinIDE: Como el editador y ambiente para usar JanusGraph.
 
+**Información del dataset**
 Wikipedia es una enciclopedia libre escrita en colaboración por voluntarios de todo el mundo. Una pequeña parte de los contribuyentes de Wikipedia son administradores, que son usuarios con acceso a funciones técnicas adicionales que ayudan en el mantenimiento. Para que un usuario se convierta en administrador, se emite una Solicitud de administración y la comunidad de Wikipedia, a través de una discusión pública o una votación, decide a quién promover a la administración. Usando la copia del historial completo de páginas de Wikipedia (del 3 de enero de 2008), extrajimos todas las elecciones de administrador y los datos del historial de votos. Esto nos dio 2,794 elecciones con 103,663 votos totales y 7,066 usuarios participando en las elecciones (ya sea emitiendo su voto o siendo votados). De estas 1,235 elecciones resultaron en un ascenso exitoso, mientras que 1,559 elecciones no resultaron en el ascenso. Aproximadamente la mitad de los votos en el conjunto de datos provienen de administradores existentes, mientras que la otra mitad proviene de usuarios comunes de Wikipedia.
 
 **Estadísticas del dataset**
