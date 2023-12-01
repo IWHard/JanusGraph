@@ -1,4 +1,4 @@
-# Para importar el dataset “Wikipedia Vote Network” encontrado en _, sin tener que descargar el dataset en este Github 
+# Para importar el dataset “Wikipedia Vote Network” encontrado en wiki-Vote.txt.gz, sin tener que descargar el dataset en este Github 
 # podemos escribir un script de Groovy el cual puede ser ejecutado en la consola de Gremlin, el script será el siguiente:
 
 $ curl -L -O http://snap.stanford.edu/data/wiki-Vote.txt.gz
