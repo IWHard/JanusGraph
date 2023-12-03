@@ -52,7 +52,7 @@ Nota: JanusGraph requiere explícitamente la definición del schema antes que a�
 Ya importado el dataset, podemos realizar algunas sentencias CRUD, podemos ver la documentación de las sentencias para nuestro dataset en [Sentencias_CRUD](https://github.com/IWHard/JanusGraph/blob/main/Sentencias_CRUD)
 
 **Grafo resultante del dataset**
-![Grafo Visualizado]((https://github.com/IWHard/JanusGraph/blob/main/wiki-vote.png)
+![wiki](https://github.com/IWHard/JanusGraph/assets/97716802/62547db4-509f-47b2-a2ea-9d6e0e7ba94a)
 
 **Colaboradores**
 - Alec Manuel Montes de Oca
