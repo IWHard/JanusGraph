@@ -5,6 +5,7 @@ Para el uso de JanusGraph se usó:
 - VirtualBox: Como máquina virtual para perfil de Linux en Windows, con el objetivo de programar en su lenguaje nativo.
 - Gremlin: Como para crear el servidor en donde estará ubicado JanusGraph.
 - GremlinIDE: Como el editador y ambiente para usar JanusGraph.
+
 Asi como herramientas para la visualizacion completa del resultado esperado:
 - Gephi: Como visualizador del grafo resultante.
 
@@ -28,6 +29,7 @@ Wikipedia es una enciclopedia libre escrita en colaboración por voluntarios de 
 | Diámetro efectivo del percentil 90 | 3.8 |
 
 WCC -> Weakly Connected Component
+
 SCC -> Strongly Connected Component
 
 Podemos encontrar la dataset en este repositorio, el archivo llamado [wiki-Vote.txt.gz](https://github.com/IWHard/JanusGraph/blob/main/wiki-Vote.txt.gz)
