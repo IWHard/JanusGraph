@@ -2,7 +2,6 @@
 
 JanusGraph es una BD NoSQL distribuida, open source, escalable, optimizado para almacenar y consultar gráficos que contienen cientos de miles de millones de vértices y aristas distribuidos en un clúster de varias máquinas.
 Para el uso de JanusGraph se usó:
-- VirtualBox: Como máquina virtual para perfil de Linux en Windows, con el objetivo de programar en su lenguaje nativo.
 - Gremlin: Como para crear el servidor en donde estará ubicado JanusGraph.
 - GremlinIDE: Como el editador y ambiente para usar JanusGraph.
 
